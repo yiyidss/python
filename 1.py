@@ -1,4 +1,10 @@
 import datetime
+import time
+
+timeStamp = 1557502800
+timeArray = time.localtime(timeStamp)
+otherStyleTime = time.strftime("%Y-%m-%d", timeArray)
+print(type(timeArray))
 
 # d1 = datetime.datetime.strptime('2017-12-12',"%Y-%m-%d").year
 # d2 = datetime.datetime.today().year
@@ -14,14 +20,14 @@ import datetime
 # newdate = datetime.datetime.strptime('1899-12-30', '%Y-%m-%d')+delta+d    # excel 导入数据时间戳转换格式
 # otherStyleTime2 = datetime.datetime.strftime(newdate, '%Y-%m-%d')
 # print(otherStyleTime,otherStyleTime2)
-
-d2 = str(datetime.datetime.today().year)+'-01-01'
-print(d2)
-a = '2000-01-01'
-b = '2000-12-31'
-dd = datetime.datetime.strptime(a, '%Y-%m-%d')
-dt = datetime.datetime.strptime(b, '%Y-%m-%d')
-print((dd - dt).days)
+#
+# d2 = str(datetime.datetime.today().year)+'-01-01'
+# print(d2)
+# a = '2000-01-01'
+# b = '2000-12-31'
+# dd = datetime.datetime.strptime(a, '%Y-%m-%d')
+# dt = datetime.datetime.strptime(b, '%Y-%m-%d')
+# print((dd - dt).days)
 # d3 = datetime.datetime.strftime(dd, '%Y-%m-%d')
 # print(d3)
 
