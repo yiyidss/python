@@ -13,7 +13,9 @@ import time
 # otherStyleTime = dateArray.strftime("%Y-%m-%d %H:%M")       # datetime转化成 str
 # print(type(otherStyleTime))
 # print(str(datetime.datetime.today())>'2015-01-01')
-# d1 = datetime.datetime.strptime('2017-12-12',"%Y-%m-%d").year       # str转化成 datetime格式   取年； 时间元组格式取年：.tm_year
+d1 = datetime.datetime.strptime('2017-12-12',"%Y-%m-%d")       # str转化成 datetime格式   取年； 时间元组格式取年：.tm_year
+otherStyleTime = d1.strftime("%Y-%m")
+print(otherStyleTime)
 # # d2 = datetime.datetime.today().year
 # d2 = datetime.datetime.strptime(datetime.date.today(),"%Y-%m-%d")
 # #
