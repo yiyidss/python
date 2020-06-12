@@ -26,4 +26,3 @@ for x in ab_urls:
     df = df.join(dfx, how='outer')
 
 df.to_excel('python3.xlsx')
-# print([x.keywords for x in soup.findAll('meta')])
